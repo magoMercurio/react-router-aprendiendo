@@ -4,11 +4,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.jsx'
 import Sobre from './pages/Sobre.jsx'
 import Page404 from "./pages/page404";
+import Header from './component/Header';
 
 function App() {
 
   return (
     <Router>
+      <Header/>
       <Routes>
         <Route
           path='/' 
