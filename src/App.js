@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx'
 import Sobre from './pages/Sobre.jsx'
 import Page404 from "./pages/page404";
 import Header from './component/Header';
+import Post from './pages/Post';
 
 function App() {
 
@@ -19,6 +20,10 @@ function App() {
         <Route
           path='/sobre'
           element={<Sobre/>}
+        />
+        <Route
+        path='/posts/:id'
+        element={<Post/>}
         />
         <Route
           path='*'
