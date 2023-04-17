@@ -16,6 +16,7 @@ const Post = ({ url }) => {
     .catch(() => {
       navigate('/not-found')
     })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
 
   return (
